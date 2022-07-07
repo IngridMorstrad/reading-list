@@ -191,8 +191,9 @@ function loadTimeline(finished_yaml, timeline_body_tmpl) {
     $.each(finished_yaml, function(idx, book) {
         book['idx'] = idx;
         books.push({
-            "startDate": book.finished.replace(/\//g,","),
-            "headline": book.author + ": " + book.title,
+            "startDate": "2022,01,01",
+            "endDate": book.finished.replace(/\//g, ","),
+            "headline": book.author + ":s " + book.title,
             "text": timeline_body_tmpl(book)
         });
     });
