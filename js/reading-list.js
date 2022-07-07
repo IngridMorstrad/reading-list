@@ -52,7 +52,7 @@ function loadYAML(name, f) {
     client.send();
 }
 
-function prettifyFinishedEntryInPlace(entry) {
+function prettifyEntryInPlace(entry) {
     function dateString(d) {
         // Get a string representation of a date object d.
         return d.getUTCFullYear().toString() + "/" +
@@ -64,7 +64,8 @@ function prettifyFinishedEntryInPlace(entry) {
 
     entry['hash'] = hash.toString(CryptoJS.enc.Hex);
     entry.finished = dateString(entry.finished);
-
+    entry.started = dateString(entry.started);
+    
     // Convert markdown to HTML in the notes and quotes.
     if ('quotes' in entry) {
         var l = entry.quotes;
@@ -103,7 +104,7 @@ function loadLists() {
             yaml = yamlUnfiltered.filter(isComplete);
             $("#finished-count").append(yaml.length);
 
-            // Must be done before `prettifyFinishedEntryInPlace`.
+            // Must be done before `prettifyEntryInPlace`.
             // Otherwise, the dates are sorted as strings.
             if (!isPermalink) {
                 yaml.sort(function(a,b) {
@@ -115,7 +116,7 @@ function loadLists() {
 
             var iLen = yaml.length;
             for (var i = 0; i < iLen; i++) {
-                prettifyFinishedEntryInPlace(yaml[i])
+                prettifyEntryInPlace(yaml[i])
                 if (isPermalink && yaml[i].hash == params.book) {
                     yaml = [yaml[i]];
                     break;
