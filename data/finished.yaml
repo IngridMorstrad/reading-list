@@ -7,24 +7,24 @@
       content: Quote 1 Content
   notes:
     - The immune system recognizes invaders by some unique characteristics that the class of invaders shares. For example, almost all bacteria have a flagellum.
-    - [H2] The complement system
-    - The inflammation triggered by macrophages and neutrophils causes a rush of blood to the area. With the rush of blood come complements (proteins smaller than viruses!).
+    - H2 The complement system
+    - The inflammation triggered by macrophages and neutrophils causes a rush of blood to the area. With the rush of blood come complements - proteins smaller than viruses!.
     - Complements maim the invading bacteria, signal for help and tear holes in the bacteria.
     - Complements are more effective against viruses.
-    - Complement C3 attaches to the bacteria first, breaking off into C3b (on the bacteria) and C3a (flies off as a signal similar to cytokines).
+    - Complement C3 attaches to the bacteria first, breaking off into C3b, which latches onto the bacteria, and C3a - flies off as a signal similar to cytokines.
     - C3b then morphs to act as a base for more C3s to bind to, causing a cascade.
-    - As more C3a pieces fly off, macrophages and neutrophils arrive (by moving towards areas where concentration of C3a is higher).
+    - As more C3a pieces fly off, macrophages and neutrophils arrive - by moving towards areas where concentration of C3a is higher.
     - After some time, C3b transforms again and rips a hole in the bacteria.
-    - Complements are floating in your blood always (even without pathogens around). If C3 doesn't bind soon, it gets cleaned up (possibly by macrophages?)
+    - Complements are floating in your blood always - even without pathogens around. If C3 doesn't bind soon, it gets cleaned up - possibly by macrophages?
     - Complements also act as handles for macrophages to grab onto. Macrophages & bacterial cell wall are both negatively charged. Though this won't stop the macrophage, having the positively charge C3b "handle" helps.
     - This promotion of phagocytosis is known as opsonization.
     - The innate immune system is made up of the macrophages, neutrophils and the complement system.
-    - Some bacteria hide from the innate immune system (literally, by creating a capsule to hide the flagellum). These can only be attacked by the adaptive immune system.
-    - Dendritic cell (Sample & spit, until infection seen. Snapshot of battlefield.)
+    - Some bacteria hide from the innate immune system - literally, by creating a capsule to hide the flagellum. These can only be attacked by the adaptive immune system.
+    - Dendritic cell - Sample & spit, until infection seen. Snapshot of battlefield.
     - Negative pressure lymph system
-    - Monocyte lymph (can convert into macrophage/neutrophil)
-    - Tonsils (sample stuff in mouth), spleen (has monocytes, blood reserves, duties can be taken up by others)
-    - duty of lymph system (moving fluid back into blood vessels)
+    - Monocyte lymph - can convert into macrophage/neutrophil.
+    - Tonsils - sample stuff in mouth. Spleen - has monocytes, blood reserves, duties can be taken up by others.
+    - duty of lymph system - moving fluid back into blood vessels.
 - author: Author B
   title: Book 2
   finished: 2017-08-13
