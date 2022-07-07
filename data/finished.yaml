@@ -133,7 +133,7 @@
   pages: 85
   rating: 4
   started: 2013-11-04
-  title: "A Scandal in Bohemia (The Adventures of Sherlock Holmes,"
+  title: "A Scandal in Bohemia (The Adventures of Sherlock Holmes, #1)"
 - 
   author: "Arthur Conan Doyle"
   finished: 2013-11-06
@@ -142,7 +142,7 @@
   pages: 24
   rating: 2
   started: 2013-11-05
-  title: "The Red-Headed League (The Adventures of Sherlock Holmes"
+  title: "The Red-Headed League (The Adventures of Sherlock Holmes #2)"
 - 
   author: "Bill Bryson"
   finished: 2013-11-12
@@ -161,7 +161,7 @@
   pages: 18
   rating: 2
   started: 2013-11-06
-  title: "A Case of Identity - a Sherlock Holmes Short Story (The Adventures of Sherlock Holmes"
+  title: "A Case of Identity - a Sherlock Holmes Short Story (The Adventures of Sherlock Holmes #3)"
 - 
   author: "K.S.R. Menon"
   finished: 2014-01-01
@@ -196,7 +196,7 @@
   pages: 224
   rating: 2
   started: 2014-07-09
-  title: "Galahad at Blandings (Blandings Castle,"
+  title: "Galahad at Blandings (Blandings Castle, #10)"
 - 
   author: "Ramachandra Guha"
   finished: 2014-07-28
@@ -232,7 +232,7 @@
   pages: 160
   rating: 4
   started: 2015-04-19
-  title: "U.S. Presidents (Ken Jennings' Junior Genius Guides,"
+  title: "U.S. Presidents (Ken Jennings' Junior Genius Guides, #3)"
 - 
   author: "Larry Gonick"
   finished: 2015-06-20
@@ -258,7 +258,7 @@
   pages: 48
   rating: 4
   started: 2015-07-06
-  title: "The Mansions of the Gods (Astérix,"
+  title: "The Mansions of the Gods (Astérix, #17)"
 - 
   author: "Donald A. Norman"
   finished: 2015-11-17
@@ -356,7 +356,7 @@
   author: "John Lewis"
   finished: 2017-07-17
   notes: 
-    - "Short book, but fairly inspiring. Artwork could have been better in parts. Looking forward to knocking out"
+    - "Short book, but fairly inspiring. Artwork could have been better in parts. Looking forward to knocking out #2 soon as well."
   pages: 128
   rating: 4
   started: 2017-07-07
@@ -658,13 +658,6 @@
   rating: 4
   started: 2020-12-21
   title: "Mind Master: Winning Lessons from a Champion's Life"
-- 
-  author: "Will Durant"
-  finished: 2021-01-03
-  pages: 704
-  rating: 0
-  started: 2014-05-29
-  title: "The Story of Philosophy: The Lives and Opinions of the World's Greatest Philosophers"
 - 
   author: "Masaji Ishikawa"
   finished: 2021-01-21
