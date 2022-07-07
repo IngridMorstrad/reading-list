@@ -191,7 +191,7 @@ function loadTimeline(finished_yaml, timeline_body_tmpl) {
     $.each(finished_yaml, function(idx, book) {
         book['idx'] = idx;
         books.push({
-            "startDate": "2022,01,01",
+            "startDate": book.started.replace(/\//g, ","),
             "endDate": book.finished.replace(/\//g, ","),
             "headline": book.author + ":s " + book.title,
             "text": timeline_body_tmpl(book)
