@@ -71,14 +71,14 @@ function prettifyEntryInPlace(entry) {
         var l = entry.quotes;
         var jLen = l.length;
         for (var j = 0; j < jLen; j++) {
-            l[j].content = marked(l[j].content);
+            l[j].content = marked.marked(l[j].content);
         }
     }
     if ('notes' in entry) {
         var l = entry.notes;
         var jLen = l.length;
         for (var j = 0; j < jLen; j++) {
-            l[j] = marked(l[j]);
+            l[j] = marked.marked(l[j]);
         }
     }
 }

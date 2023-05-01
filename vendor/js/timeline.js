@@ -1,5 +1,5 @@
 /*
-    TimelineJS - ver. 2.35.6 - 2015-03-25
+    TimelineJS - ver. 2.36.0 - 2015-05-12
     Copyright (c) 2012-2013 Northwestern University
     a project of the Northwestern University Knight Lab, originally created by Zach Wise
     https://github.com/NUKnightLab/TimelineJS
@@ -2923,7 +2923,7 @@ if(typeof VMM != 'undefined' && typeof VMM.ExternalAPI == 'undefined') {
 						
 			getOEmbed: function(tweet, callback) {
 				
-				var the_url = "//api.twitter.com/1/statuses/oembed.json?id=" + tweet.mid + "&omit_script=true&include_entities=true&callback=?",
+				var the_url = "https://api.twitter.com/1/statuses/oembed.json?id=" + tweet.mid + "&omit_script=true&include_entities=true&callback=?",
 					twitter_timeout	= setTimeout(VMM.ExternalAPI.twitter.errorTimeOutOembed, VMM.master_config.timers.api, tweet);
 					//callback_timeout= setTimeout(callback, VMM.master_config.timers.api, tweet);
 				
@@ -2967,7 +2967,7 @@ if(typeof VMM != 'undefined' && typeof VMM.ExternalAPI == 'undefined') {
 			
 			getHTML: function(id) {
 				//var the_url = document.location.protocol + "//api.twitter.com/1/statuses/oembed.json?id=" + id+ "&callback=?";
-				var the_url = "//api.twitter.com/1/statuses/oembed.json?id=" + id+ "&omit_script=true&include_entities=true&callback=?";
+				var the_url = "https://api.twitter.com/1/statuses/oembed.json?id=" + id+ "&omit_script=true&include_entities=true&callback=?";
 				VMM.getJSON(the_url, VMM.ExternalAPI.twitter.onJSONLoaded);
 			},
 			
@@ -4323,7 +4323,7 @@ if(typeof VMM != 'undefined' && typeof VMM.ExternalAPI == 'undefined') {
 				
 				// VIDEO
 				// TODO: NEED TO ADD ASYNC SCRIPT TO TIMELINE FLOW
-				VMM.attachElement("#" + m.uid, "<iframe frameborder='0' width='100%' height='100%' src='" + video_url + "'></iframe><script async src='http://platform.vine.co/static/scripts/embed.js' charset='utf-8'></script>");
+				VMM.attachElement("#" + m.uid, "<iframe frameborder='0' width='100%' height='100%' src='" + video_url + "'></iframe><script async src='https://platform.vine.co/static/scripts/embed.js' charset='utf-8'></script>");
 				
 			},
 			
@@ -4542,7 +4542,7 @@ if(typeof VMM != 'undefined' && typeof VMM.MediaElement == 'undefined') {
 					VMM.ExternalAPI.vimeo.get(m);
 			// DAILYMOTION
 				} else if (m.type		==	"dailymotion") {
-					mediaElem			=	"<div class='media-shadow'><iframe class='media-frame video dailymotion' autostart='false' frameborder='0' width='100%' height='100%' src='http://www.dailymotion.com/embed/video/" + m.id + "'></iframe></div>";
+					mediaElem			=	"<div class='media-shadow'><iframe class='media-frame video dailymotion' autostart='false' frameborder='0' width='100%' height='100%' src='//www.dailymotion.com/embed/video/" + m.id + "'></iframe></div>";
 			// VINE
 				} else if (m.type		==	"vine") {
 					mediaElem			=	"<div class='media-shadow media-frame video vine' id='" + m.uid + "'>" + loading_messege + "</div>";
@@ -4760,7 +4760,7 @@ if(typeof VMM != 'undefined' && typeof VMM.MediaType == 'undefined') {
 			media.id = wiki_id.replace(" ", "%20");
 			media.lang = d.split("//")[1].split(".wikipedia")[0];
 			success = true;
-		} else if (d.indexOf('http://') == 0) {
+		} else if (d.indexOf('http://') == 0 || d.indexOf('https://') == 0) {
 			media.type = "website";
 			media.id = d;
 			success = true;
@@ -4784,6 +4784,7 @@ if(typeof VMM != 'undefined' && typeof VMM.MediaType == 'undefined') {
 		return false;
 	}
 }
+
 
 /* **********************************************
      Begin VMM.TextElement.js
